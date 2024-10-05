@@ -15,7 +15,7 @@ body {
     background-size: cover;
     padding: 5px 5px;
     width: 100%;
-    min-height: 425px;
+    min-height: 325px;
 }
 
 .container {
@@ -101,7 +101,7 @@ header ul li a:hover {
 }
 
 .card-image {
-    max-height: 300px;
+    max-height: 400px;
     width: 100%;
     border-radius: 5px 5px 0 0;
     /* Not really in the specs, but I was playing around with different borders and I think it looks nice :)*/
@@ -135,6 +135,10 @@ header ul li a:hover {
 .card p {
     margin-bottom: 50px;
     font-size: 12px;
+}
+
+.card a h4 {
+    margin-bottom: 0;
 }
 
 .card:hover {
@@ -199,7 +203,7 @@ footer ul li a {
     color: white;
 }
 
-/*TRAVEL PAGES*/
+/*********************TRAVEL PAGES*********************/
 
 
 .travel-page {
@@ -208,13 +212,6 @@ footer ul li a {
     display: flex;
     flex-direction: column;
     height: 100vh;
-}
-
-.travel-page {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-image: linear-gradient(135deg, #cbcbcb, #c7b8ea, #878787, #959595);
 }
 
 .page {
@@ -226,13 +223,11 @@ footer ul li a {
     justify-content: center;
 }
 
-/* Image and description container */
 .page-image {
-    max-width: 100%;
+    max-width: 90%;
     width: 70%;
-    /* This will give approximately 20% margin on either side */
     height: auto;
-    max-height: 500px;
+    max-height: 425px;
     display: block;
     margin: 0 auto;
     border-radius: 5px;
@@ -240,14 +235,11 @@ footer ul li a {
 
 .destination-data {
     width: 80%;
-    /* Matching the width of the image */
     text-align: center;
     margin-top: 10px;
     display: inline-block;
 }
 
-
-/* Description styling */
 .description {
     font-size: 16px;
     margin: 0px 0;
@@ -259,19 +251,18 @@ footer ul li a {
     font-size: 14px;
 }
 
-/* Related images container */
 .related-container {
     display: flex;
     justify-content: space-between;
     width: 70%;
-    /* Matching the width of the large image */
     margin-top: 20px;
+
 }
 
 .related-container img {
     width: 23%;
-    /* Four images + small padding between them to fit within the large image width */
     height: auto;
+    max-height: 150px;
     border-radius: 5px;
 }
 
@@ -328,7 +319,10 @@ img:hover {
     left: 5%;
 }
 
-@media only screen and (orientation: landscape) and (min-width: 1300px) {
+/****************************MEDIA QUERIES***********************************/
+
+@media only screen and (orientation: landscape) and (min-width: 1200px) {
+
     body {
         background-color: rgb(180, 190, 190);
     }
@@ -343,13 +337,19 @@ img:hover {
         height: auto; /* Ensure the height adapts in landscape mode */
     }
 
+    .card-image {
+        max-height: 300px;
+        width: 100%;
+        border-radius: 5px 5px 0 0;
+        /* Not really in the specs, but I was playing around with different borders and I think it looks nice :)*/
+    }
     .destinations-container {
         margin: 0 10em;
     }
 
     .page-image {
         width: 50%; /* Reduce width of main image */
-        max-height: 400px; /* Adjust max height for landscape */
+        max-height: 450px; /* Adjust max height for landscape */
     }
 
     .related-container {
