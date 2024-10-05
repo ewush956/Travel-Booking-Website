@@ -123,7 +123,7 @@ header ul li a:hover {
     transition: transform 0.3s;
     max-width: 550px;
     min-height: 100px;
-    max-height: 300px;
+    max-height: 275px;
 }
 .card-image {
     min-height: 150px;
@@ -239,7 +239,7 @@ footer ul li a {
     max-width: 90%;
     width: 70%;
     height: auto;
-    max-height: 425px;
+    max-height: 325px;
     display: block;
     margin: 0 auto;
     border-radius: 5px;
@@ -248,26 +248,26 @@ footer ul li a {
 .destination-data {
     width: 80%;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 5px;
     display: inline-block;
 }
 
 .description {
-    font-size: 16px;
+    font-size: 12px;
     margin: 0px 0;
-
 }
 
-.destination-data .info {
+.destination-data .destination-info {
     font-style: italic;
-    font-size: 14px;
+    font-size: 10px;
+    margin-top: 5px;
 }
 
 .related-container {
     display: flex;
     justify-content: space-between;
     width: 70%;
-    margin-top: 20px;
+    
 
 }
 
