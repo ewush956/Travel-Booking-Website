@@ -4,6 +4,9 @@ body {
     margin: 0;
     background-color: rgb(197, 200, 199);
 
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
 .home-container {
@@ -165,13 +168,16 @@ header ul li a:hover {
 }
 
 footer {
-    margin-top: auto;
+    min-height: 50px;
     background-color: #51279B;
     color: white;
     display: flex;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
     justify-content: center;
     align-items: center;
-    padding: 10px;
 }
 
 footer p {
@@ -320,4 +326,38 @@ img:hover {
 .left-arrow:hover {
     background-image: url("images/left-arrows-solid.png");
     left: 5%;
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1300px) {
+    body {
+        background-color: rgb(180, 190, 190);
+    }
+
+    .home-container {
+        min-width: 100vh;
+         /* Adjusting height for landscape */   
+    }
+
+    .container {
+         /* Switch to horizontal layout in landscape */
+        height: auto; /* Ensure the height adapts in landscape mode */
+    }
+
+    .destinations-container {
+        margin: 0 10em;
+    }
+
+    .page-image {
+        width: 50%; /* Reduce width of main image */
+        max-height: 400px; /* Adjust max height for landscape */
+    }
+
+    .related-container {
+        width: 50%; /* Adjust container size */
+    }
+
+    .arrow a {
+        width: 40px; /* Adjust size of arrow buttons */
+        height: 40px;
+    }
 }
