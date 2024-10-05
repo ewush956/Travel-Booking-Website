@@ -1,0 +1,323 @@
+body {
+    /*font-family: 'Raleway', sans-serif;*/
+    font-family: 'Verdana', sans-serif;
+    margin: 0;
+    background-color: rgb(197, 200, 199);
+
+}
+
+.home-container {
+    flex: 1;
+    background-image: url('images/florence.jpg');
+    background-size: cover;
+    padding: 5px 5px;
+    width: 100%;
+    min-height: 425px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    background-image: url('images/logo.png');
+    background-size: 60px;
+    padding: 20px 30px;
+    background-repeat: no-repeat;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    size: 24px;
+    font-weight: bold;
+    list-style-type: none;
+    margin: 0;
+}
+
+header ul li {
+    margin: 0 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #51279B;
+    transition: color 1s;
+}
+
+header ul li a:hover {
+    color: aquamarine;
+    text-shadow: 0 0 2px black;
+}
+
+#info {
+    margin-left: 80px;
+    margin-top: 80px;
+    color: white;
+    text-shadow: 0 0 2px black;
+}
+
+#info h1 {
+    font-size: 48px;
+    margin-bottom: 0px;
+}
+
+#info p {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#info button {
+    background-color: #51279B;
+    color: white;
+    text-shadow: 0 0 2px black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    transition: color 1s;
+    transition: background-color 1s;
+}
+
+#info button:hover {
+    background-color: aquamarine;
+    text-shadow: none;
+    color: black;
+    font-weight: bold;
+}
+
+.destinations-container {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    padding: 18px;
+    margin-bottom: 18px;
+    /*background-color: #f0f0f0;*/
+}
+
+.card-image {
+    max-height: 300px;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    /* Not really in the specs, but I was playing around with different borders and I think it looks nice :)*/
+}
+
+.hidden-info {
+    display: none;
+}
+
+.card {
+    background-color: #f0f0f0;
+    position: relative;
+    border: #c9c9c9 1px solid;
+    border-radius: 5px;
+    transition: transform 0.3s;
+    max-width: 550px;
+}
+
+.card a {
+    text-decoration: none;
+    color: black;
+}
+
+.social-stats {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 14px;
+}
+
+.card p {
+    margin-bottom: 50px;
+    font-size: 12px;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(127, 255, 212, 0.5);
+}
+
+
+.social-stats img,
+.social-stats span {
+    display: inline;
+    vertical-align: middle;
+}
+
+.social-stats img {
+    width: 14px;
+    height: 14px;
+    margin-right: 1px;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.card h4 {
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.card p {
+    margin-left: 5px;
+}
+
+footer {
+    margin-top: auto;
+    background-color: #51279B;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+}
+
+/*TRAVEL PAGES*/
+
+
+.travel-page {
+    padding: 5px 5px;
+    background-image: linear-gradient(135deg, #cbcbcb, #c7b8ea, #878787, #959595);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.travel-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: linear-gradient(135deg, #cbcbcb, #c7b8ea, #878787, #959595);
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+/* Image and description container */
+.page-image {
+    max-width: 100%;
+    width: 70%;
+    /* This will give approximately 20% margin on either side */
+    height: auto;
+    max-height: 500px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.destination-data {
+    width: 80%;
+    /* Matching the width of the image */
+    text-align: center;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+
+/* Description styling */
+.description {
+    font-size: 16px;
+    margin: 0px 0;
+
+}
+
+.destination-data .info {
+    font-style: italic;
+    font-size: 14px;
+}
+
+/* Related images container */
+.related-container {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    /* Matching the width of the large image */
+    margin-top: 20px;
+}
+
+.related-container img {
+    width: 23%;
+    /* Four images + small padding between them to fit within the large image width */
+    height: auto;
+    border-radius: 5px;
+}
+
+.related-container img,
+.page-image {
+    transition: box-shadow 0.3s;
+    box-shadow: 0 0 10px rgba(74, 16, 99, 0.5);
+}
+
+img:hover {
+    box-shadow: 0 0 10px rgba(127, 255, 212, 0.5);
+}
+
+.arrow a {
+    background-size: 100% 100%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 35%;
+    border-radius: 100%;
+    transition: box-shadow 0.3s;
+    transition: background-color 0.3s;
+    transition: background-image 0.3s;
+}
+
+.arrow a:hover {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 35%;
+    border-radius: 100%;
+    transition: box-shadow 0.3s;
+    transition: background-color 0.3s;
+    transition: background-image 0.3s;
+}
+
+.right-arrow {
+    background-image: url("images/right-arrows.png");
+    right: 5%;
+}
+
+.right-arrow:hover {
+    background-image: url("images/right-arrows-solid.png");
+    right: 5%;
+}
+
+.left-arrow {
+    background-image: url("images/left-arrows.png");
+    left: 5%;
+}
+
+.left-arrow:hover {
+    background-image: url("images/left-arrows-solid.png");
+    left: 5%;
+}
