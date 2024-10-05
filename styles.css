@@ -13,9 +13,9 @@ body {
     flex: 1;
     background-image: url('images/florence.jpg');
     background-size: cover;
-    padding: 5px 5px;
+    padding: 0 0;
     width: 100%;
-    min-height: 325px;
+    min-height: 290px;
 }
 
 .container {
@@ -26,22 +26,25 @@ body {
 
 header {
     background-image: url('images/logo.png');
-    background-size: 60px;
-    padding: 20px 30px;
+    background-size: 45px;
+    padding: 15px 5px;
     background-repeat: no-repeat;
 }
 
 header ul {
     display: flex;
     list-style: none;
-    size: 24px;
-    font-weight: bold;
     list-style-type: none;
     margin: 0;
+    padding-left: 50px;
+    font-size: 10px;
+    
 }
 
 header ul li {
-    margin: 0 20px;
+    font-weight: bold;
+    margin: 0 10px;
+
 }
 
 header ul li a {
@@ -55,24 +58,24 @@ header ul li a:hover {
     text-shadow: 0 0 2px black;
 }
 
-#info {
-    margin-left: 80px;
-    margin-top: 80px;
+.info {
+    margin-left: 60px;
+    margin-top: 50px;
     color: white;
     text-shadow: 0 0 2px black;
 }
 
-#info h1 {
-    font-size: 48px;
+.info h1 {
+    font-size: 26px;
     margin-bottom: 0px;
 }
 
-#info p {
-    font-size: 24px;
+.info p {
+    font-size: 14px;
     margin-bottom: 10px;
 }
 
-#info button {
+.info button {
     background-color: #51279B;
     color: white;
     text-shadow: 0 0 2px black;
@@ -81,9 +84,10 @@ header ul li a:hover {
     margin-bottom: 50px;
     transition: color 1s;
     transition: background-color 1s;
+    font-size: 12px;
 }
 
-#info button:hover {
+.info button:hover {
     background-color: aquamarine;
     text-shadow: none;
     color: black;
@@ -94,9 +98,9 @@ header ul li a:hover {
     flex: 1;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 8px;
-    padding: 18px;
-    margin-bottom: 18px;
+    gap: 2px;
+    padding: 10px;
+    margin-bottom: 10px;
     /*background-color: #f0f0f0;*/
 }
 
@@ -118,34 +122,41 @@ header ul li a:hover {
     border-radius: 5px;
     transition: transform 0.3s;
     max-width: 550px;
-    max-height: 400px;
+    min-height: 100px;
+    max-height: 300px;
 }
-
+.card-image {
+    min-height: 150px;
+}
 .card a {
     text-decoration: none;
     color: black;
 }
 
-.social-stats {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    font-size: 14px;
-}
 
 .card p {
-    margin-bottom: 50px;
-    font-size: 12px;
+    margin-bottom: 45px;
+    font-size: 8px;
+    margin-left: 5px;
+    margin-top: 4px;
+    font-weight: normal;
 }
 
 .card a h4 {
     margin-bottom: 0;
+    font-size: 10px;
+    margin-top: 4px;
+    margin-left: 5px;
+    font-weight: normal;
 }
 
-.card:hover {
-    transform: scale(1.02);
-    box-shadow: 0 0 10px rgba(127, 255, 212, 0.5);
+.social-stats {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    font-size: 8px;
 }
+
 
 
 .social-stats img,
@@ -155,27 +166,24 @@ header ul li a:hover {
 }
 
 .social-stats img {
-    width: 14px;
-    height: 14px;
+    width: 8px;
+    height: 8px;
     margin-right: 1px;
-    margin-top: 10px;
+    margin-top: 7px;
     margin-left: 5px;
     margin-bottom: 5px;
 }
 
-.card h4 {
-    margin-top: 10px;
-    margin-left: 5px;
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(127, 255, 212, 0.5);
 }
 
-.card p {
-    margin-left: 5px;
-}
 
 /*************************FOOTER************************/
 
 footer {
-    min-height: 50px;
+    min-height: 20px;
     background-color: #51279B;
     color: white;
     display: flex;
@@ -185,6 +193,7 @@ footer {
     margin-top: auto;
     justify-content: center;
     align-items: center;
+    font-size: 10px;
 }
 
 footer p {
@@ -199,7 +208,7 @@ footer ul {
 }
 
 footer ul li {
-    margin: 0 10px;
+    margin: 0 5px;
 }
 
 footer ul li a {
