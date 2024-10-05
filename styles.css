@@ -338,15 +338,15 @@ img:hover {
     }
 
     .card-image {
-        max-height: 300px;
+        max-height: 275px;
         width: 100%;
         border-radius: 5px 5px 0 0;
         /* Not really in the specs, but I was playing around with different borders and I think it looks nice :)*/
     }
     .destinations-container {
         margin: 0 10em;
+        gap: 18px;
     }
-
     .page-image {
         width: 50%; /* Reduce width of main image */
         max-height: 450px; /* Adjust max height for landscape */
