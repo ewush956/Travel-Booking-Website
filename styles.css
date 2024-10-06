@@ -340,34 +340,45 @@ img:hover {
         background-size: 45px;
         padding: 15px 5px;
     }
+
     header ul {
         font-size: 10px;
     }
+
     header ul li {
         margin: 0 10px;
     }
+
     .info {
         margin-top: 50px;
     }
+
     .info h1 {
         font-size: 26px;
     }
+
     .info p {
         font-size: 14px;
     }
+
     .card {
-        max-height: 275px;
+        max-height: 300px;
+        min-height: 100px;
     }
+
     .card p {
         font-size: 8px;
-        padding-bottom: 40px;
+        padding-bottom: 20px;
     }
+
     .card a h4 {
         font-size: 10px;
     }
+
     .social-stats {
         font-size: 8px;
     }
+
     .social-stats img {
         width: 8px;
         height: 8px;
@@ -379,20 +390,39 @@ img:hover {
     .page-image {
         max-height: 325px;
     }
+
     .description {
         font-size: 12px;
         margin: 0 0;
     }
+
     .destination-data .destination-info {
         margin-top: 5px;
     }
 
 }
-    
-@media only screen and (orientation: landscape) and (min-width: 1310px) {
+
+@media only screen and (orientation: landscape) and (min-width: 1410px) {
 
     body {
         background-color: rgb(180, 190, 190);
+    }
+
+    .card {
+        min-height: 500px;
+        min-width: 400px;
+    }
+
+    .destinations-container {
+
+        gap: 30px;
+        padding: 30px;
+    }
+
+    .card-image {
+        min-height: 180px;
+        min-width: 350px;
+        /* Not really in the specs, but I was playing around with different borders and I think it looks nice :)*/
     }
 
     .home-container {
@@ -407,7 +437,7 @@ img:hover {
     }
 
     .card-image {
-        max-height: 275px;
+        max-height: 350px;
         width: 100%;
         border-radius: 5px 5px 0 0;
         /* Not really in the specs, but I was playing around with different borders and I think it looks nice :)*/
@@ -415,7 +445,7 @@ img:hover {
 
     .destinations-container {
         margin: 0 10em;
-        gap: 18px;
+        gap: 36px;
     }
 
     .page-image {
