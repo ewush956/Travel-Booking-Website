@@ -26,8 +26,8 @@ body {
 
 header {
     background-image: url('images/logo.png');
-    background-size: 45px;
-    padding: 15px 5px;
+    background-size: 60px;
+    padding: 20px 20px;
     background-repeat: no-repeat;
 }
 
@@ -37,13 +37,13 @@ header ul {
     list-style-type: none;
     margin: 0;
     padding-left: 50px;
-    font-size: 10px;
-    
+    font-size: 16px;
+
 }
 
 header ul li {
     font-weight: bold;
-    margin: 0 10px;
+    margin: 0 15px;
 
 }
 
@@ -60,19 +60,21 @@ header ul li a:hover {
 
 .info {
     margin-left: 60px;
-    margin-top: 50px;
+    margin-top: 80px;
+    padding: 0 20px;
     color: white;
     text-shadow: 0 0 2px black;
 }
 
 .info h1 {
-    font-size: 26px;
+    font-size: 46px;
     margin-bottom: 0px;
 }
 
 .info p {
-    font-size: 14px;
+    font-size: 24px;
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .info button {
@@ -123,11 +125,13 @@ header ul li a:hover {
     transition: transform 0.3s;
     max-width: 550px;
     min-height: 100px;
-    max-height: 275px;
+    max-height: 475px;
 }
+
 .card-image {
     min-height: 150px;
 }
+
 .card a {
     text-decoration: none;
     color: black;
@@ -136,7 +140,7 @@ header ul li a:hover {
 
 .card p {
     margin-bottom: 45px;
-    font-size: 8px;
+    font-size: 12px;
     margin-left: 5px;
     margin-top: 4px;
     font-weight: normal;
@@ -144,7 +148,7 @@ header ul li a:hover {
 
 .card a h4 {
     margin-bottom: 0;
-    font-size: 10px;
+    font-size: 14px;
     margin-top: 4px;
     margin-left: 5px;
     font-weight: normal;
@@ -154,10 +158,8 @@ header ul li a:hover {
     position: absolute;
     bottom: 0px;
     left: 0px;
-    font-size: 8px;
+    font-size: 12px;
 }
-
-
 
 .social-stats img,
 .social-stats span {
@@ -166,12 +168,12 @@ header ul li a:hover {
 }
 
 .social-stats img {
-    width: 8px;
-    height: 8px;
+    width: 14px;
+    height: 12px;
     margin-right: 1px;
-    margin-top: 7px;
-    margin-left: 5px;
-    margin-bottom: 5px;
+    margin-top: 18px;
+    margin-left: 16px;
+    margin-bottom: 16px;
 }
 
 .card:hover {
@@ -232,14 +234,13 @@ footer ul li a {
     align-items: center;
     padding: 10px 0;
     flex-grow: 1;
-    justify-content: center;
 }
 
 .page-image {
     max-width: 90%;
     width: 70%;
     height: auto;
-    max-height: 325px;
+    max-height: 425px;
     display: block;
     margin: 0 auto;
     border-radius: 5px;
@@ -253,21 +254,22 @@ footer ul li a {
 }
 
 .description {
-    font-size: 12px;
-    margin: 0px 0;
+    font-size: 14px;
+    margin: 10px 10px;
 }
 
 .destination-data .destination-info {
     font-style: italic;
     font-size: 10px;
-    margin-top: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .related-container {
     display: flex;
     justify-content: space-between;
     width: 70%;
-    
+
 
 }
 
@@ -341,12 +343,13 @@ img:hover {
 
     .home-container {
         min-width: 100vh;
-         /* Adjusting height for landscape */   
+        /* Adjusting height for landscape */
     }
 
     .container {
-         /* Switch to horizontal layout in landscape */
-        height: auto; /* Ensure the height adapts in landscape mode */
+        /* Switch to horizontal layout in landscape */
+        height: auto;
+        /* Ensure the height adapts in landscape mode */
     }
 
     .card-image {
@@ -355,21 +358,27 @@ img:hover {
         border-radius: 5px 5px 0 0;
         /* Not really in the specs, but I was playing around with different borders and I think it looks nice :)*/
     }
+
     .destinations-container {
         margin: 0 10em;
         gap: 18px;
     }
+
     .page-image {
-        width: 50%; /* Reduce width of main image */
-        max-height: 450px; /* Adjust max height for landscape */
+        width: 50%;
+        /* Reduce width of main image */
+        max-height: 450px;
+        /* Adjust max height for landscape */
     }
 
     .related-container {
-        width: 50%; /* Adjust container size */
+        width: 50%;
+        /* Adjust container size */
     }
 
     .arrow a {
-        width: 40px; /* Adjust size of arrow buttons */
+        width: 40px;
+        /* Adjust size of arrow buttons */
         height: 40px;
     }
 }
