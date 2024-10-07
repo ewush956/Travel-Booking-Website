@@ -335,7 +335,7 @@ img:hover {
 
 /****************************MEDIA QUERIES***********************************/
 /*This definately feels like a hacky fix, but the page looks wildly different in on my pc*/
-@media only screen and (max-height: 650px) {
+@media only screen and (max-height: 650px) and (max-width: 1000px) {
     header {
         background-size: 45px;
         padding: 15px 5px;
@@ -422,25 +422,20 @@ img:hover {
     .card-image {
         min-height: 180px;
         min-width: 350px;
-        /* Not really in the specs, but I was playing around with different borders and I think it looks nice :)*/
     }
 
     .home-container {
         min-width: 100vh;
-        /* Adjusting height for landscape */
     }
 
     .container {
-        /* Switch to horizontal layout in landscape */
         height: auto;
-        /* Ensure the height adapts in landscape mode */
     }
 
     .card-image {
         max-height: 350px;
         width: 100%;
         border-radius: 5px 5px 0 0;
-        /* Not really in the specs, but I was playing around with different borders and I think it looks nice :)*/
     }
 
     .destinations-container {
@@ -450,19 +445,15 @@ img:hover {
 
     .page-image {
         width: 50%;
-        /* Reduce width of main image */
         max-height: 450px;
-        /* Adjust max height for landscape */
     }
 
     .related-container {
         width: 50%;
-        /* Adjust container size */
     }
 
     .arrow a {
         width: 40px;
-        /* Adjust size of arrow buttons */
         height: 40px;
     }
 }
