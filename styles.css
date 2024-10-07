@@ -335,7 +335,7 @@ img:hover {
 
 /****************************MEDIA QUERIES***********************************/
 /*This definately feels like a hacky fix, but the page looks wildly different in on my pc*/
-@media only screen and (max-height: 650px) and (max-width: 1000px) {
+@media only screen and (max-height: 650px) {
     header {
         background-size: 45px;
         padding: 15px 5px;
@@ -369,10 +369,15 @@ img:hover {
     .card p {
         font-size: 8px;
         padding-bottom: 20px;
+        margin-bottom: 0;
     }
 
     .card a h4 {
         font-size: 10px;
+    }
+
+    .card-image {
+        max-height: 22px;
     }
 
     .social-stats {
@@ -399,7 +404,6 @@ img:hover {
     .destination-data .destination-info {
         margin-top: 5px;
     }
-
 }
 
 @media only screen and (orientation: landscape) and (min-width: 1410px) {
