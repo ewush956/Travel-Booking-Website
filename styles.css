@@ -404,6 +404,10 @@ img:hover {
     .destination-data .destination-info {
         margin-top: 5px;
     }
+
+    .related-container img {
+        max-height: 100px;
+    }
 }
 
 @media only screen and (orientation: landscape) and (min-width: 1410px) {
